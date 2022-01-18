@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #444444;
+}
+
+/* Navbar start */
+#nav{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+.navLeft{
+    color: #5fcf80;
+    font-size:38px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.navLeft:hover{
+    color: #5fcf80;
+}
+.navRight{
+    margin-left: 26%;
+}
+.navRightProp{
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+    color: black;
+}
+.navButton{
+    color: white;
+    border-radius: 50px;
+    background-color: #5fcf80;
+    border: none;
+    padding: 7px 15px;
+}
+/* nav End */
+#homeIntro{
+    position: relative;
+    /* background-image: url("/assets/img/hero-bg.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    color: white;
+}
+#homeIntro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0,0.3);
+}
+#homeIntro .center{
+    margin-top: 14%;
+}
+#homeIntro h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 40%;
+    color: white;
+}
+#homeIntro h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px 0;
+    color: white;
+}
+#homeIntro a{
+    border-radius: 50px;
+    padding: 7px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: .3s;
+}
+#homeIntro a:hover{
+    background-color: #5fcf80;
+    border: 2px solid #5fcf80;
+}
+#Info .head h2{
+    font-size: 30px;
+    color: black;
+}
+#Info .italic{
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+#Info ul{
+    list-style: none;
+}
+#Info ul li{
+    font-size: 17px;
+    margin: 10px 0;
+    font-weight: 400;
+    word-spacing: 1px;
+}
+#Info .end{
+    font-size: 17px;
+}
+#Info .colorLogo{
+    color: #5fcf80;
+}
+.number h2{
+    color: #5fcf80;
+    font-size: 50px;
+}
+.name p{
+    /* text-align: center; */
+    font-size: 15px;
+    margin: 0 20px;
+    font-weight: 500;
+}
+.cardInfo{
+    background-color: #5fcf80;
+    padding: 30px;
+}
+.cardInfo h3{
+    color: white;
+    margin-bottom: 30px;
+}
+.cardInfo p{
+    color: white;
+}
+.buttonCard{
+    background-color: #86db9f;
+    border-radius: 50px;
+    border: none;
+}
+.buttton{
+    text-align: center;
+}
+.logoCard i{
+    color:#5fcf80;
+    font-size:35px;
+    padding: 15px;
+    background-color: rgb(212, 219, 219);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.cardInfoEqual{
+    margin: 11% 0;
+}
+.cardInfoEqual h3{
+    text-align: center;
+    font-size: 18px;
+    margin: 0 50px 10px;
+}
+.cardInfoEqual p{
+    text-align: center;
+    margin: 0 15px;
+}
+#xidmet p{
+    font-size: 22px;
+    margin: 21px 0;
+    font-weight: 500;
+}
+#xidmet .border{
+    border: 1px solid rgb(190, 190, 190);
+    margin: 10px 10px 10px 0;
+    max-width: 24%;
+}
+#courses .head h2{
+    font-size: 15px;
+    padding: 0 15px;
+    color: #aaaaaa;
+}
+#courses .head h2::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: #5fcf80;
+    display: inline-block;
+    margin: 4px 10px;
+}
+#courses h1{
+    font-size: 35px;
+    color: black;
+    margin-bottom: 3%;
+    padding: 0 15px;
+}
+.coursesBody h4{
+    font-size:17px;
+    display: inline;
+    background-color: #5fcf80;
+    color: white;
+    padding: 7px 14px;
+    /* margin: 0; */
+}
+.coursesBody p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.Center h3{
+    margin-top: 10px;
+    font-size: 22px;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+    display: inline-block;
+}
+.Center h3:hover{
+    color: #5fcf80;
+}
+.Center p{
+    font-size: 15px;
+    color: #8a8585;
+    font-weight: 400;
+}
+.commenter{
+    border-top: 1px solid rgb(153, 151, 151);
+}
+.commenter img{
+    border-radius: 50%;
+}
+.commenter span{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.commenterLeft{
+    display: inline;
+}
+.commenterRight span {
+    color: #8a8585;
+}
+.commenterRight i {
+    color: #8a8585;
+}
+.cardContent{
+    text-align: center;
+}
+.cardContent h5{
+    margin:0;
+}
+.cardContent span{
+    font-size: 13px;
+}
+.cardContent p{
+    margin-top: 15px;
+    color: #8a8585;
+}
+#trainers ul{
+    list-style: none;
+}
+#trainers ul li{
+    margin: 0 5px;
+    font-size: 22px;
+}
+.modifiedLogo{
+    color: #8a8585;
+    cursor: pointer;
+}
+.modifiedLogo:hover{
+    color: #5fcf80;
+}
+#footer1 h3{
+    font-weight: 500;
+}
+#footer1 ul{
+    list-style: none;
+}
+#footer1 ul li{
+    font-size: 15px;
+    font-weight: 300;
+}
+.distanceFooter{
+    margin-top: 20px;
+}
+#footer1 span{
+    font-weight: bold;
+}
+#footer1 .card2 h4{
+    font-size: 20px;
+}
+#footer1 .card2 ul li{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d8a8a;
+    padding: 5px 0;
+    cursor: pointer;
+}
+#footer1 .card2 ul li:hover{
+    color: #5fcf80;
+}
+.logoFooter1{
+    font-size: 12px;
+    color: #5fcf80;
+}
+.card3 p{
+    font-size: 15px;
+}
+.inputSubs button{
+    border-radius: 20px;
+}
