@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor</title>
+    <script src="https://kit.fontawesome.com/90e76288a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <section id="nav" class="w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand navLeft" href="#">Mentor</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">Menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse navRight" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link navRightProp" href="#">
+                                    Home <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">Cources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle navRightProp" href="#" id="navbarDropdownMenuLink"
+                                   role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navRightProp" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-success navRightProp navButton ml-2">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+            @RenderBody()
+
+    <footer>
+        <section id="footer1" class="mt-5" style="background-color: rgb(240, 235, 235); height: 100%; width: 100%; min-height: 300px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+                        <h3>Mentor</h3>
+                        <ul>
+                            <li>A108 Adam Street</li>
+                            <li>New York, NY 535022</li>
+                            <li>United States</li>
+                            <li class="distanceFooter"><span>Phone:</span> +1 5589 55488 55</li>
+                            <li><span>Email:</span> orxan@example.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 card2">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Home</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> About</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Services</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Terms of service</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 card2">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Web Design</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Web Development</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Product Management</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Marketing</li>
+                            <li><i class="fas fa-chevron-right logoFooter1"></i> Graphic Design</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 card2 card3">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <div class="inputSubs">
+                            <input type="email" size="15">
+                            <button class="btn btn-success">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <script src="~/assets/js/script.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

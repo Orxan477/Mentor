@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Trainer>
+@{
+    ViewData["Title"] = "Index";
+    int num = 1;
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Trainer</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Content</th>
+                                <th>Setting</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var trainer in Model)
+                            {
+                                <tr>
+                                    <td>@num</td>
+                                    <td><img src="~/assets/img/@trainer.Image" /></td>
+                                    <td>@trainer.Name</td>
+                                    <td>@trainer.Position</td>
+                                    <td>@trainer.Content</td>
+                                    <td>
+                                        <a class="btn btn-warning" asp-route-id="@trainer.Id" asp-action="Update">
+                                            Update
+                                        </a>
+                                        <form method="post" asp-action="Delete" asp-route-id="@trainer.Id" class="d-inline">
+                                            <button type="submit" class="btn btn-danger">
+                                                Delete
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                num++;
+                            }
+                        </tbody>
+                        <a class="btn btn-success" asp-area="Admin" asp-controller="Trainer" asp-action="Create">Create Trainer</a>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
